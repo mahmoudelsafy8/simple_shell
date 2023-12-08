@@ -128,8 +128,8 @@ int loophsh(char **);
 /* toem_errors.c */
 void _eputs(char *);
 int _eputchar(char);
-int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
+int _putfd(char x, int f);
+int _putsfd(char *str, int f);
 
 /* toem_string.c */
 int _strlen(char *);
@@ -166,7 +166,7 @@ int is_delim(char, char *);
 int _isalpha(int);
 int _atoi(char *);
 
-/* toem_errors1.c */
+/* toem_errorsf.c */
 int _erratoi(char *);
 void print_error(info_t *, char *);
 int print_d(int, int);
