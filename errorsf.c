@@ -87,23 +87,23 @@ int print_d(int in, int f)
 
 /**
  * convert_number - converter function, a clone of itoa
- * @n: number
+ * @num: number
  * @b: base
  * @f: argument flags
  *
  * Return: string
  */
-char *convert_number(long int n, int b, int f)
+char *convert_number(long int num, int b, int f)
 {
 	static char *array;
 	static char buffer[50];
 	char sign = 0;
 	char *ptr;
-	unsigned long n = nu;
+	unsigned long n = num;
 
-	if (!(f & CONVERT_UNSIGNED) && nu < 0)
+	if (!(f & CONVERT_UNSIGNED) && num < 0)
 	{
-		n = -nu;
+		n = -num;
 		sign = '-';
 
 	}
