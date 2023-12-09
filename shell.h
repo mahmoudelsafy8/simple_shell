@@ -89,8 +89,8 @@ typedef struct passinfo
 	int env_changed;
 	int status;
 
-	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
-	int cmd_buf_type; /* CMD_type ||, &&, ; */
+	char **cmd_buf;
+	int cmd_buf_type;
 	int readfd;
 	int histcount;
 } info_t;
@@ -137,7 +137,7 @@ int _strcmp(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
-/* toem_string1.c */
+/* toem_stringf.c */
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
@@ -148,7 +148,7 @@ char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
-/* toem_tokenizer.c */
+/* toem_token.c */
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
